@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ankitbhatia87/userSpecificTodos#readme",
   "dependencies": {
+    "@angular/cli": "^6.2.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
