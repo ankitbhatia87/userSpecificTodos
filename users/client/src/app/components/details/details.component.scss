@@ -1,0 +1,15 @@
+@mixin rt-space ($rightValue, $topValue, $position) {
+    right: $rightValue;
+    top: $topValue;
+    position: $position;
+}
+
+.rt-1 {
+    @include rt-space(10px, 10px, absolute);
+    z-index: 10;
+}
+
+.details-wrapper {
+    z-index: 2;
+    background: #fff;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "Users and their todos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitbhatia87/userSpecificTodos.git"
+  },
+  "author": "Ankit Bhatia",
+  "license": "GNU General Public License v3.0",
+  "bugs": {
+    "url": "https://github.com/ankitbhatia87/userSpecificTodos/issues"
+  },
+  "homepage": "https://github.com/ankitbhatia87/userSpecificTodos#readme",
+  "dependencies": {
+    "@angular/cli": "^6.2.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.14"
+  }
+}

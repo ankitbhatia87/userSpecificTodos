@@ -1,0 +1,40 @@
+<div class="container">
+  <h1 class="text-center">Users Database</h1>
+  <hr>
+  <div class="row">
+  <div class="col-lg-6 shadow details-wrapper" *ngFor="let user of user">
+    <input type="button" style="z-index: 2" class="btn btn-primary position-absolute rt-1" value="Todos" (click)="showTodos()" />
+    <div class="row">
+      <div class="col-lg-4">Name:</div>
+      <div class="col-lg-8">{{user.name}}</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-lg-4">Username:</div>
+      <div class="col-lg-8">{{user.username}}</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-lg-4">Email:</div>
+      <div class="col-lg-8">{{user.email}}</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-lg-4">Address:</div>
+      <div class="col-lg-8">{{user.address.street}}, {{user.address.suite}}, {{user.address.city}}, {{user.address.zipcode}} </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-lg-4">Phone:</div>
+      <div class="col-lg-8">{{user.phone}} </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-lg-4">Website:</div>
+      <div class="col-lg-8"><a target="_blank" href="http://{{user.website}}" >{{user.website}}</a></div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-lg-4">Company:</div>
+      <div class="col-lg-8"><strong>{{user.company.name}}</strong><br><em>{{user.company.catchPhrase}}</em><br>{{user.company.bs}}</div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <app-todos [hidden] ="!isOn"></app-todos>
+  </div>
+</div>
+</div>
