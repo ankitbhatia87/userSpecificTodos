@@ -1,0 +1,27 @@
+@mixin fixed-height ($height) {
+    height: $height;
+}
+.height300 {
+    @include fixed-height(296px);
+    overflow: auto;
+    
+}
+
+@keyframes slideRight {
+    from {left: -100%;}
+    to {left: 0;}
+}
+
+.todos-wrapper {
+    position: relative;
+    left: 0;
+    z-index: 0;
+    animation-name: slideRight;
+    animation-duration: .4s;
+}
+
+.todos-wrapper ul, .todos-wrapper li, .todos-wrapper li p {
+    z-index: 0;
+}
+
+
