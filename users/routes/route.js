@@ -9,15 +9,21 @@ router.get('/users', (req, res, next)=>{
     })
 })
 
-router.get('/users/:id', (req, res, next)=>{
-    let userinfo;
+router.get('/details/:id', (req, res, next)=>{
+    User.find((err, users) => {
+        let user = users.filter(u => u.id == req.params.id);
+        res.json(user);
+    })
+})
+
+router.get('/details/:id/todos', (req, res, next) => {
     User.find((err, users) => {
         let user = users.filter(u => u.id == req.params.id);
         Todo.find((err, todos)=>{
             let todo = todos.filter(t => t.userId == req.params.id);
             res.json(todo);
+            console.log(todo);
         })
-        
     })
 })
 

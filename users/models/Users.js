@@ -9,7 +9,7 @@ const UserSchema = mongoose.Schema({
         street: String,
         suite: String,
         city: String,
-        zipcode: Number,
+        zipcode: String,
         geo: {
             lat: String,
             lng: String
