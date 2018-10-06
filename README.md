@@ -1,2 +1,5 @@
 # userSpecificTodos
-Users and their Todos
+
+It is a basic learning and understanding of MEAN Stack.
+
+#I love coding!!
